@@ -3,7 +3,7 @@ import React from 'react'
 const Card = () => {
     return (
         <div class="card">
-            <img src="./src/assets/images/Rectangle.png" alt="Rectangle-img" />
+            <img src="./assets/images/Rectangle.png" alt="Rectangle-img" />
             <h3 class="small-h">Lorem ipsum dolar sit de</h3>
             <p class="para"><svg width="24" height="25" viewBox="0 0 24 25" fill="none"
                 xmlns="http://www.w3.org/2000/svg">

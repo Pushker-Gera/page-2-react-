@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from './components/Card'
+import { Card_Data } from './Card_Data'
 
 const App = () => {
     return (
@@ -10,15 +11,11 @@ const App = () => {
             </svg></span>
             <h1 className='heading'>Choose your next event</h1>
             <div class="row">
-                <div class="col-4">
-                    <Card />
-                </div>
-                <div class="col-4">
-                    <Card />
-                </div>
-                <div class="col-4">
-                    <Card />
-                </div>
+                {Card_Data.map((card,i) => {
+                    return <div className='col-4' key={i}>
+                        <Card smallh={card.smallh} date={card.date} city={card.city} people={card.people} button={card.button} />
+                       </div>
+               })}
             </div>
         </div>
     )

@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Card = () => {
+const Card = (props) => {
     return (
         <div class="card">
             <img src="./assets/images/Rectangle.png" alt="Rectangle-img" />
-            <h3 class="small-h">Lorem ipsum dolar sit de</h3>
+            <h3 class="smallh">{props.smallh}</h3>
             <p class="para"><svg width="24" height="25" viewBox="0 0 24 25" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.6">
@@ -15,7 +15,7 @@ const Card = () => {
                         d="M5 22.375H19C20.103 22.375 21 21.478 21 20.375V6.375C21 5.272 20.103 4.375 19 4.375H17V2.375H15V4.375H9V2.375H7V4.375H5C3.897 4.375 3 5.272 3 6.375V20.375C3 21.478 3.897 22.375 5 22.375ZM19 8.375L19.001 20.375H5V8.375H19Z"
                         fill="black" />
                 </g>
-            </svg> 10/02/2022</p>
+            </svg> {props.date}</p>
             <p class="para"><svg width="24" height="25" viewBox="0 0 24 25" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_103562_115)">
@@ -31,7 +31,7 @@ const Card = () => {
                         <rect width="24" height="24" fill="white" transform="translate(0 0.375)" />
                     </clipPath>
                 </defs>
-            </svg>Mumbai</p>
+            </svg>{props.city}</p>
             <p class="para"><svg width="24" height="25" viewBox="0 0 24 25" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -52,8 +52,8 @@ const Card = () => {
                 <path
                     d="M20.25 14.9174H18C17.8011 14.9174 17.6103 14.8384 17.4697 14.6978C17.329 14.5571 17.25 14.3663 17.25 14.1674C17.25 13.9685 17.329 13.7778 17.4697 13.6371C17.6103 13.4964 17.8011 13.4174 18 13.4174H20.25C20.6478 13.4174 21.0294 13.2594 21.3107 12.9781C21.592 12.6968 21.75 12.3153 21.75 11.9174V11.1149L19.8375 10.3649C19.7458 10.3286 19.6623 10.2745 19.5915 10.2058C19.5208 10.1371 19.4643 10.0551 19.4253 9.96452C19.3863 9.87396 19.3655 9.7766 19.3642 9.67801C19.3629 9.57941 19.381 9.48152 19.4175 9.38993C19.4896 9.20529 19.6318 9.05669 19.8131 8.97658C19.9943 8.89648 20.2 8.89139 20.385 8.96243L22.7775 9.89993C22.917 9.95551 23.0367 10.0517 23.1209 10.1761C23.2052 10.3004 23.2501 10.4472 23.25 10.5974V11.9099C23.251 12.3045 23.1741 12.6954 23.0238 13.0603C22.8735 13.4251 22.6526 13.7567 22.374 14.0361C22.0953 14.3155 21.7643 14.5371 21.3998 14.6884C21.0353 14.8396 20.6446 14.9174 20.25 14.9174Z"
                     fill="#666666" />
-            </svg>1,080</p>
-            <button> Go Check</button>
+            </svg>{props.people}</p>
+            <button>{props.button}</button>
         </div>
     )
 }
